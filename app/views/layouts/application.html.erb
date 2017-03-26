@@ -23,6 +23,11 @@
   <li><%= link_to "Log In", new_user_session_path%></li>
   <%end%>
   </ul>
+  <ul class = "nav navbar-nav">
+    <% if user_signed_in?%>
+    <li><%= link_to "Add Movie", new_movie_path%></li>
+    <%end%>
+  </ul>
     </div>
   </nav>  
 
