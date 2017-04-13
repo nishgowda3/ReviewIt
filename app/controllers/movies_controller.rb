@@ -18,12 +18,12 @@ class MoviesController < ApplicationController
     end
 
     def new
-        @movie = current_user.movies.build
+        @movie = Movie.new
         @categories = Category.all.map{ |c| [c.name, c.id]}
     end
 
     def create
-        @movie = current_user.movies.build(movie_params)
+        @movie = Movie.new(movie_params)
         @movie.category_id = params[:category_id]
         if @movie.save
             redirect_to root_path
