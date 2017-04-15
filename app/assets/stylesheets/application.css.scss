@@ -20,6 +20,8 @@
 
 
 @mixin background-tile {
+    margin-right: 20px;
+    margin-left: 20px;
     box-sizing: border-box;
     background-color: #fff;
     border-radius: 5px 10px;
@@ -28,11 +30,11 @@
 }
 
 body {
-    background: -webkit-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-    background: -moz-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-    background: -ms-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-    background: -o-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-    background:         linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -webkit-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -moz-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -ms-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -o-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
+    background:         linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
     font-family: 'Loto' , sans-serif;
 }
 
@@ -69,8 +71,8 @@ p.alert, p.notice {
 }
 
 .dropdown-menu > li > a:hover {
-    background-color: darken(#bdbdbd, 5%);
-    color: #fff;
+    background-color: darken(#bdbdbd, 50%);
+    color: #C3D7D9;
 }
 
 .dropdown-menu > .active > a {
@@ -161,6 +163,7 @@ width: 250px;
     }
     
     .movie-director {
+        color: #234;
         font-size: 1.5em;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -180,7 +183,10 @@ width: 250px;
 }
 
 
+
+
 .current-category {
+    color: #234;
     margin-bottom: 40px;
 }
 
@@ -191,8 +197,9 @@ width: 250px;
 }
 
 h1{
+    color: #234;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     font-size: 2em;
     font-weight: bold;
 }

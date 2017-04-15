@@ -32,32 +32,32 @@ class MoviesController < ApplicationController
         end
     end
 
-def edit
-@categories = Category.all.map{ |c| [c.name, c.id]}
-end
+    def edit
+        @categories = Category.all.map{ |c| [c.name, c.id]}
+    end
 
-def update
+    def update
         @movie.category_id = params[:category_id]
    
-    if @movie.update(movie_params)
-        redirect_to movie_path(@movie)
-    else
-        render 'edit'
+        if @movie.update(movie_params)
+            redirect_to movie_path(@movie)
+        else
+            render 'edit'
+        end
     end
-end
 
-def destroy
-    @movie.destroy
-    redirect_to root_path
-end
+    def destroy
+        @movie.destroy
+        redirect_to root_path
+    end
 
-private
-def movie_params
-    params.require(:movie).permit(:title, :description, :director, :category_id, :movie_img)
-end
+    private
+        def movie_params
+            params.require(:movie).permit(:title, :description, :director, :category_id, :movie_img)
+        end
 
-def find_movie
-@movie = Movie.find(params[:id])
-end
+        def find_movie
+            @movie = Movie.find(params[:id])
+        end
 
 end
