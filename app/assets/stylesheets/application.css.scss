@@ -1,20 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
- 
- @import url(https://fonts.gogoleapis.com/css?family=Lato);
+@import url(https://fonts.gogoleapis.com/css?family=Lato);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -30,11 +14,11 @@
 }
 
 body {
-    background: -webkit-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
-    background: -moz-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
-    background: -ms-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
-    background: -o-linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
-    background:         linear-gradient(70deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -webkit-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -moz-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -ms-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+    background: -o-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+    background:         linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
     font-family: 'Loto' , sans-serif;
 }
 
@@ -71,8 +55,8 @@ p.alert, p.notice {
 }
 
 .dropdown-menu > li > a:hover {
-    background-color: darken(#bdbdbd, 50%);
-    color: #C3D7D9;
+    background-color: darken(#bdbdbd, 5%);
+    color: #fff;
 }
 
 .dropdown-menu > .active > a {
